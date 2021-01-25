@@ -4,7 +4,7 @@
 # cd $HOME/spark/sbin && ./start-master.sh --host 172.17.0.2 --properties-file ha.conf
 
 # LAUNCH A WORKER NODE
-sleep 1m
+sleep 2m &&
 cd $HOME/spark/sbin && ./start-slave.sh spark://172.31.48.37:7077,172.31.48.38:7077 
 while true; do sleep 1000; done
 # BUILD SPARK APP AND SUBMIT IT

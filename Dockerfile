@@ -56,6 +56,6 @@ RUN chmod +x /usr/local/bin/startup_script.sh
 EXPOSE 8080 
 
 # RUN THE STARTUP SCRIPT
-# CMD [ "startup_script.sh" ]
+CMD [ "startup_script.sh" ]
 
 
